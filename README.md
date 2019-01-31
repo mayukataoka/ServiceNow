@@ -38,7 +38,9 @@ Just like testNG, pytest also has a mechanism to do data driven test. Here's an 
 
 (Sample test 2)
 
-Same idea as test1, we can pull the login credentail data for English, Japanese and Russion from an external file. 
+Similary, we can pull the login credentail data for English, Japanese and Russion from an external file. 
+self.get_user_name_from_yaml_config() read a config and return data as a list of tuples just as test1 does.
+
 
 ```
     @pytest.mark.parametrize("username,password", self.get_user_name_from_yaml_config())
