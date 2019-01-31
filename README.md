@@ -1,7 +1,7 @@
 
 # Sample login code using Appium and Python
 
-## Test app 
+## Test app I chose to use for this sample project
 I am using an Android fasion app called called Poshmark.  You can buy and sell your fashion items in your house. 
 
 ## Project structure 
