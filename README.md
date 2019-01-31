@@ -59,6 +59,12 @@ self.get_user_name_from_yaml_config() read a config and return data as a list of
 
         assert login_screen.did_login_succeed_without_error == True
 ```
+## Being DRY 
+
+Driver related set up goes to conftest.  This code gets called automatically per test.  Using dependency injection. 
+
+https://github.com/mayukataoka/ServiceNow/blob/master/poshmark_app/tests/conftest.py
+
 
 ## Locators
 https://github.com/mayukataoka/ServiceNow/blob/master/poshmark_app/screens/locators.py
