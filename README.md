@@ -61,7 +61,7 @@ self.get_user_name_from_yaml_config() read a config and return data as a list of
 ```
 ## DRY 
 
-The driver related set up code goes to conftest.  This code gets called automatically per test.  If I develop other tests, this setup code gets called automatically.    Fixture == dependency injection. (https://docs.pytest.org/en/latest/fixture.html)
+The driver related set up code goes to conftest.  This code gets called automatically per test class.  If I develop other tests, this setup code gets called automatically.    Fixture == dependency injection. (https://docs.pytest.org/en/latest/fixture.html)
 
 ```
 import pytest
