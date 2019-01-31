@@ -16,6 +16,8 @@ I am using an Android fasion app called called Poshmark.  You can buy and sell y
 
 (Sample test 1)
 
+Just like testNG, pytest also has a mechanism to do data driven test. Here's an example passing English, Japanese and Russion login credentails. 
+
 ```
     @pytest.mark.parametrize("username,password", [
         ("mayu", "mayuspassword"),
@@ -35,6 +37,9 @@ I am using an Android fasion app called called Poshmark.  You can buy and sell y
 ```
 
 (Sample test 2)
+
+Same idea as test1, we can pull the login credentail data for English, Japanese and Russion from an external file. 
+
 ```
     @pytest.mark.parametrize("username,password", self.get_user_name_from_yaml_config())
     def test_login_method2(self, driver, username, password):
