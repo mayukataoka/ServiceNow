@@ -19,7 +19,7 @@ I am using an Android fasion app  called Poshmark.  You can easily buy and sell 
 
 ## Data driven tests for localized inputs
 
-(Sample test 1)
+### Sample test 1
 
 Just like testNG, pytest also has a mechanism to do data driven test. Here's an example passing English, Japanese and Russion login credentails. 
 
@@ -41,7 +41,7 @@ Just like testNG, pytest also has a mechanism to do data driven test. Here's an 
         assert login_screen.did_login_succeed_without_error == True
 ```
 
-(Sample test 2)
+### Sample test 2
 
 Similary, we can pull the login credentail data for English, Japanese and Russion from an external file. 
 self.get_user_name_from_yaml_config() read a config and return data as a list of tuples just as test1 does.
