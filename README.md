@@ -59,10 +59,36 @@ self.get_user_name_from_yaml_config() read a config and return data as a list of
 
         assert login_screen.did_login_succeed_without_error == True
 ```
-## Being DRY 
+## DRY 
 
-Driver related set up goes to conftest.  This code gets called automatically per test.  Using dependency injection. 
+The driver related set up code goes to conftest.  This code gets called automatically per test.  If I develop other tests, this setup code gets called automatically.    Fixture == dependency injection. 
 
+```
+import pytest
+from appium import webdriver
+from poshmark_app.helpers import EXECUTOR, PACKAGE, ACTIVITY, DEVICE
+from appium import webdriver
+
+@pytest.fixture(scope="class", autouse=True)
+def driver(request):
+    driver = webdriver.Remote(
+        command_executor=EXECUTOR,
+        desired_capabilities={
+            'appPackage': PACKAGE,
+            'appActivity': ACTIVITY,
+            'platformName': 'Android',
+            'automationName': 'UIAutomator2',
+            'deviceName': DEVICE,
+        }
+    )
+
+    def fin():
+        driver.quit()
+
+    request.addfinalizer(fin)
+    driver.implicitly_wait(10)
+    return driver
+```
 https://github.com/mayukataoka/ServiceNow/blob/master/poshmark_app/tests/conftest.py
 
 
