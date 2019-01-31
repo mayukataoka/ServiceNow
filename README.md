@@ -3,7 +3,7 @@
 
 ## Test app I chose to use for this sample project
 I am using an Android fasion app called called Poshmark.  You can buy and sell your fashion items in your house. 
-<img src="poshm_login_1.png" width="400" height="400">
+<img src="poshmark_app/poshm_login_1.png" width="400" height="400">
 
 ## Project structure 
 
