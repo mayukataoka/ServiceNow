@@ -12,4 +12,5 @@ I am using an Android fasion app called called Poshmark.  You can buy and sell y
 -  data directory (Contains data)
 -  api directory (I did not use api today. But I usually make api calls from my Appium tests to reset state or to verify data. )
 
-
+## Locators
+https://github.com/mayukataoka/ServiceNow/blob/master/poshmark_app/screens/locators.py
