@@ -9,7 +9,7 @@ I am using an Android fasion app called called Poshmark.  You can easily buy and
 
 ## Project structure 
 
--  screens directory (Contains page objects. I separated out locators into a different file.)
+-  screens directory (Contains page objects. I separated out locators into a different file.) https://github.com/mayukataoka/ServiceNow/tree/master/poshmark_app/screens
 -  tests directory  (Contains different tests. The tests imports page objects. )
 -  helpers class (Contains constants.  Values can be reassigned when needed) https://github.com/mayukataoka/ServiceNow/blob/master/poshmark_app/helpers.py
 -  data directory (Contains data) https://github.com/mayukataoka/ServiceNow/tree/master/poshmark_app/data
