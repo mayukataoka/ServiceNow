@@ -20,13 +20,11 @@ The common code to share among Google app suite goes here.  Example, login, app 
 
 ### Step 4 - Import the common test code from the app specific directories.
 
-'''
-
+```
 from Google_Play_App_Suite.Google_Common.screens import loginScreen
 from Google_Play_App_Suite.Google_Common.screens import SignUpScreen
 
-'''
-
+```
 
 
 
